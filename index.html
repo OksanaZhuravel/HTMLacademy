@@ -13,7 +13,7 @@
     <header class="header">
       <nav class="nav header__nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="header__logo logo"><span class="visually-hidden"> цветы в
+          <li class="nav__item"><a href="index.html" class="header__logo logo"><span class="visually-hidden"> цветы в
                 Петербурге</span></a></li>
           <li class="nav__item"><a href="#" class="nav__link"><span class="nav__text">Каталог</span></a></li>
           <li class="nav__item"><a href="#" class="nav__link"><span class="nav__text">Доставка и оплата</span></a></li>
@@ -31,7 +31,7 @@
         <a href="#" class="header__btn btn__link">Смотреть каталог</a>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="advantage">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantage__wrap">
@@ -67,27 +67,27 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог цветов и букетов</h2>
-        <div class="catalog__wrap">
+        <a href="#" class="catalog__wrap">
           <img src="/img/beautiful1.png" alt="Свадебные букеты" class="catalog__img" width="388" height="442">
           <div class="catalog__inner">
             <h4 class="catalog__title">Свадебные букеты</h4>
             <p class="catalog__text">Букеты для невест</p>
           </div>
-        </div>
-        <div class="catalog__wrap">
+        </a>
+        <a href="#" class="catalog__wrap">
           <img src="/img/beautiful2.png" alt="Букеты с пионами" class="catalog__img" width="388" height="442">
           <div class="catalog__inner">
             <h4 class="catalog__title">Букеты с пионами</h4>
             <p class="catalog__text">Букеты с сезонными пионами</p>
           </div>
-        </div>
-        <div class="catalog__wrap">
+        </a>
+        <a href="#" class="catalog__wrap">
           <img src="/img/beautiful3.png" alt="Выбрать букет" class="catalog__img" width="388" height="442">
           <div class="catalog__inner">
             <h4 class="catalog__title">Выбрать букет</h4>
             <p class="catalog__text">Букеты в ассортименте</p>
           </div>
-        </div>
+        </a>
       </section>
       <section class="discount">
         <div class="discount__wrap">
@@ -100,19 +100,19 @@
       <section class="perfect">
         <h2 class="perfect__title">4 шага к идеальному букету</h2>
         <div class="perfect__wrap">
-          <p class="perfect__subtitle">Заказ</p>
+          <p class="perfect__subtitle perfect__subtitle--order">Заказ</p>
           <p class="perfect__text">Выбирите понравившейся букет из каталога и оформите заказ</p>
         </div>
         <div class="perfect__wrap">
-          <p class="perfect__subtitle">Уточнение деталей</p>
+          <p class="perfect__subtitle perfect__subtitle--details">Уточнение деталей</p>
           <p class="perfect__text">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
         </div>
         <div class="perfect__wrap">
-          <p class="perfect__subtitle">Оплата</p>
+          <p class="perfect__subtitle perfect__subtitle--payment">Оплата</p>
           <p class="perfect__text">Оплатить заказ можно онлайн на сайте или при получении</p>
         </div>
         <div class="perfect__wrap">
-          <p class="perfect__subtitle">Доставка</p>
+          <p class="perfect__subtitle perfect__subtitle--delivery">Доставка</p>
           <p class="perfect__text">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
         </div>
       </section>
@@ -122,13 +122,14 @@
           <p class="news__text">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
           <ul class="news__social social__list">
             <li class="social__item">
-              <a href="#" class="social__link"><span class="visually-hidden">instagram</span></a>
+              <a href="#" class="social__link social__link--instagram"><span
+                  class="visually-hidden">instagram</span></a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link"><span class="visually-hidden">facebook</span></a>
+              <a href="#" class="social__link social__link--facebook"><span class="visually-hidden">facebook</span></a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link"><span class="visually-hidden">twitter</span></a>
+              <a href="#" class="social__link social__link--twitter"><span class="visually-hidden">twitter</span></a>
             </li>
           </ul>
         </div>
@@ -173,7 +174,8 @@
     <footer class="footer">
       <nav class="nav footer__nav">
         <ul class="nav__list">
-          <li class="nav__item nav__item--footer"><a href="#" class="logo logo--footer"><span class="visually-hidden">
+          <li class="nav__item nav__item--footer"><a href="index.html" class="logo logo--footer"><span
+                class="visually-hidden">
                 цветы в Петербурге</span></a></li>
           <li class="nav__item nav__item--footer"><a href="#" class="nav__link"><span
                 class="nav__text  nav__text--footer">Каталог</span></a></li>
@@ -186,13 +188,21 @@
           <li class="nav__item nav__item--footer"><a href="#" class="nav__link"><span
                 class="nav__text nav__text--footer">Контакты</span></a></li>
         </ul>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--footerinstagram"><span
+                class="visually-hidden">instagram</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--footerfacebook"><span
+                class="visually-hidden">facebook</span></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--footertwitter"><span
+                class="visually-hidden">twitter</span></a>
+          </li>
+        </ul>
       </nav>
-      <ul class="social__list">
-        <li class="social__item"><a href="#" class="social__link"><span class="visually-hidden">instagram</span></a>
-        </li>
-        <li class="social__item"><a href="#" class="social__link"><span class="visually-hidden">facebook</span></a></li>
-        <li class="social__item"><a href="#" class="social__link"><span class="visually-hidden">twitter</span></a></li>
-      </ul>
     </footer>
   </body>
 
