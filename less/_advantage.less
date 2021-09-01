@@ -1,0 +1,61 @@
+.advantage {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 48px 0 80px 0;
+  text-align: left;
+
+  &__subtitle {
+    margin: 0 0 8px 20px;
+    font-weight: 500;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+
+    &--delivery {
+      &::before {
+        left: -82px;
+        width: 82px;
+        height: 52px;
+        background-image: url(../img/delivery.svg);
+      }
+    }
+
+    &--flowers {
+      &::before {
+        left: -52px;
+        width: 52px;
+        height: 52px;
+        background-image: url(../img/flowers.svg);
+      }
+    }
+
+    &--foto {
+      &::before {
+        left: -60px;
+        width: 59px;
+        height: 52px;
+        background-image: url(../img/foto.svg);
+      }
+    }
+  }
+
+  &__text {
+    margin: 0 0 0 20px;
+    max-width: 285px;
+  }
+
+  &__wrap {
+    position: relative;
+    margin: 0 80px 0 0;
+    max-width: 285px;
+  }
+}
