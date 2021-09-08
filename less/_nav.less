@@ -5,7 +5,21 @@
   border-right: none;
 
   &__item {
-    margin: 0 89px 0 0;
+    &--footer {
+      margin: 0 68px 0 0;
+    }
+
+    &:nth-child(-n+2) {
+      margin: 0 101px 0 0;
+    }
+
+    &:nth-child(n+4) {
+      margin: 0 89px 0 0;
+    }
+
+    &:nth-child(3) {
+      margin: 0 224px 0 0;
+    }
   }
 
   &__link {
@@ -21,6 +35,11 @@
     margin: 22px 0;
     padding: 0;
     list-style-type: none;
+
+    &--header {
+      padding: 0 0 0 99px;
+      box-sizing: border-box;
+    }
   }
 
   &__text {

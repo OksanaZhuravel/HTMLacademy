@@ -1,13 +1,12 @@
 .review {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
   width: 100%;
   max-width: 1200px;
-  margin: 0 0 49px 0;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 0 80px 0;
   box-sizing: border-box;
   border: 1px solid #AE7C78;
+  text-align: center;
 
   &__name {
     margin: 0 0 63px 0;
@@ -15,14 +14,14 @@
   }
 
   &__text {
-    max-width: 275px;
+    max-width: 300px;
     margin: 0 0 16px 0;
   }
 
   &__title {
-    width: 100%;
+    grid-column: 1/4;
     margin: 40px 0;
-    font-family: "playfairdisplay", Arial, sans-serif;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -34,6 +33,5 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    // max-width: 300px;
   }
 }

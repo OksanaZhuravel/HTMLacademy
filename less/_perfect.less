@@ -1,7 +1,12 @@
 .perfect {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  align-items: center;
+  justify-items: center;
+  padding: 80px 120px;
+  box-sizing: border-box;
 
   &__subtitle {
     display: flex;
@@ -14,6 +19,7 @@
       content: "";
       display: block;
       height: 52px;
+      margin: 0 0 15px 0;
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
@@ -50,14 +56,12 @@
 
   &__text {
     margin: 8px 0 8px 0;
-    max-width: 245px;
   }
 
   &__title {
-    width: 100%;
-    margin: 80px 0 0 0;
-    text-align: center;
-    font-family: "playfairdisplay", Arial, sans-serif;
+    grid-column: 1/5;
+    margin: 0 0 10px 0;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 48px;
@@ -65,10 +69,8 @@
   }
 
   &__wrap {
-    margin: 36px 10px 0 10px;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
     max-width: 285px;
     text-align: center;
   }

@@ -1,14 +1,17 @@
 .footer {
   width: 100%;
-  min-height: 97px;
+  display: grid;
+  grid-template-rows: 97px;
+  grid-template-columns: 327px 1fr;
   background-color: rgba(174, 124, 120, 1);
-  // color: rgba(255, 255, 255, 1);
 
   &__nav {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
-    justify-content: center;
-    align-items: center;
+  }
+
+  &__logo {
+    margin: 24px 103px 0 125px;
   }
 }

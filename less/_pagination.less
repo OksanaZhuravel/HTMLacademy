@@ -1,4 +1,5 @@
 .pagination {
+  width: 100%;
   display: flex;
   justify-content: center;
 
@@ -7,45 +8,18 @@
     border: none;
     margin: 0 10px;
     width: 50px;
-    height: 3px;
-    position: relative;
-    background-color: #AE7C78;
-
-    &::after,
-    &::before {
-      content: '';
-      position: absolute;
-      width: 10px;
-      height: 2px;
-      background-color: #AE7C78;
-    }
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: transparent;
 
     &--left {
-      &::after {
-        top: -3px;
-        left: -3px;
-        transform: rotate(-45deg);
-      }
-
-      &::before {
-        top: 3px;
-        left: -3px;
-        transform: rotate(45deg);
-      }
+      background-image: url(../img/buttonleft.svg);
     }
 
     &--right {
-      &::after {
-        top: -3px;
-        right: -3px;
-        transform: rotate(45deg);
-      }
-
-      &::before {
-        top: 3px;
-        right: -3px;
-        transform: rotate(-45deg);
-      }
+      background-image: url(../img/buttonright.svg);
     }
   }
 }

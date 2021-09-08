@@ -1,34 +1,49 @@
 .autor {
-  display: block;
   width: 100%;
-  min-height: 544px;
+  display: grid;
+  grid-template-columns: 1fr 390px 390px;
+  gap: 11px;
+  align-items: end;
+  padding: 0 120px 0 120px;
   box-sizing: border-box;
-  padding: 80px 120px 0 120px;
-  background-image: url("../img/header__fon.jpg"),
-    url("../img/header__fon1.jpg");
-  background-size: 386px 404px, 387px 420px;
-  background-repeat: no-repeat;
-  background-position: 527px 140px, 933px 82px;
+
+  &__wrap {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
 
   &__btn {
     margin: 0 0 165px 0;
   }
 
+  &__img {
+
+    &--peones {
+      width: 386px;
+      height: 404px;
+      margin: 0 0 47px 0;
+    }
+
+    &--roses {
+      width: 387px;
+      height: 420px;
+      margin: 0 0 89px 0;
+    }
+  }
+
   &__text {
-    max-width: 385px;
-    margin: 0 0 65px 0;
+    margin: 30px 0 60px 0;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 29px;
   }
 
   &__title {
-    max-width: 385px;
-    margin: 0 0 24px 0;
-    font-family: "playfairdisplay", Arial, sans-serif;
+    margin: 83px 0 0 0;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    font-weight: 400;
     font-size: 44px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 59px;
+    line-height: 57px;
 
     &--subtitle {
       font-style: italic;
