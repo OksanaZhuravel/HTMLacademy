@@ -10,5 +10,4 @@
 
 Ссылки не рабочие.
 
-Опубликованный проект с помощью github по ссылке:
-
+Опубликованный проект с помощью github по ссылке: https://oksanazhuravel.github.io/HTMLacademy/
